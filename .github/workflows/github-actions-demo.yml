@@ -23,6 +23,6 @@ jobs:
         run: echo "${{ steps.skript.outputs.PROMENA }}"
       - name: hostname
         id: hostname
-        run: echo PROMENA2=`cat /etc/hostname` | >> $GITHUB_OUTPUT
+        run: echo PROMENA2=`cat /etc/hostname` >> $GITHUB_OUTPUT
       - name: show var2
         run: echo "${{ steps.hostname.outputs.PROMENA2 }}"
