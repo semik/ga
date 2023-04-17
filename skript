@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "PROMENA=hodnota" >> $GITHUB_ENV
