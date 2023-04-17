@@ -20,4 +20,4 @@ jobs:
         id: skript
         run: ./skript
       - name: show vars
-        run: set
+        run: echo "${{ steps.skript.outputs.PROMENA }}"
