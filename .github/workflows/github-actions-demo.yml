@@ -18,6 +18,6 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: exec script
         id: skript
-        run: ./skript
+        run: sudo ./skript
       - name: show vars
         run: echo "${{ steps.skript.outputs.PROMENA }}"
